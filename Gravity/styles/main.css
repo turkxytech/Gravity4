@@ -1,0 +1,356 @@
+:root{
+    --back:linear-gradient(90deg, rgba(55, 71, 255, 100) 0%, #6347ff 52.99%, rgba(55, 71, 255, 100) 100%)
+    --back2: #6347ff;
+}
+
+body{
+    background-color: #141414;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container img{
+    width: 100px;
+}
+/* Start Landing */
+.landing{
+    background-size: cover;
+}
+
+.landing img{
+    width: 100%;
+    position: relative;
+    bottom: -50px;
+}
+
+.down{
+    position: relative;
+    z-index: 1024;
+    bottom: -90px;
+    left: 49%;
+    color: #4c00ff !important;
+    transition: 500ms;
+}
+
+.down:hover{
+    text-shadow: 0 0 10px #4c00ff,
+                0 0 20px #4c00ff,
+                0 0 40px #4c00ff;
+}
+/* Start About */
+.about{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .container p{
+    position: relative;
+    left: -180px;
+    line-height: 2;
+}
+
+.about img{
+    width: 200px;
+    position: absolute;
+    right: 60px;
+}
+
+.main-about{
+    position: absolute;
+    left: 44.7%;
+    transform: translateY(-200px);
+}
+/* Start Projects */
+.main-project{
+    position: absolute;
+    z-index: 10;
+    left: 41%;
+    transform: translateY(-200px);
+}
+
+.project .container{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 0;
+    position: relative;
+    left: 9.25%;
+}
+
+.box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #4c00ff;
+    padding: 10px 20px;
+    background-color: #14111b;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box .text p{
+    color: #666 !important;
+    font-size: 15px;
+}
+/* Start Contact */
+.main-contact{
+    position: absolute;
+    z-index: 10;
+    left: 41%;
+    transform: translateY(-200px);
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact .container{
+    display: flex;
+}
+#contact .container .text{
+    position: relative;
+    left: 8%;
+    top: 10%;
+    font-size: 50px;
+}
+
+.whatsapp:hover,
+.facebook:hover{
+    color: #0026ff !important;
+    text-shadow: 
+    0 0 10px #0026ff,
+    0 0 20px #0026ff,
+    0 0 40px #0026ff,
+    0 0 80px #0026ff;
+}
+
+.phone:hover,
+.gmail:hover{
+    color: #4c00ff !important;
+    text-shadow: 
+    0 0 10px #4c00ff,
+    0 0 20px #4c00ff,
+    0 0 40px #4c00ff,
+    0 0 80px #4c00ff;
+}
+
+.gmail,
+.facebook,
+.phone,
+.whatsapp{
+    transition: 500ms;
+}
+
+/* Start Footer */
+footer{
+    position: static;
+    bottom: 0;
+    background-color: #0f0f0f;
+    height: 100px;
+    width: calc(100% - 10px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Start Responsive */
+
+@media (max-width: 768px) {
+    header .container {
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    header .container ul {
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .landing img {
+        width: 107%;
+        position: relative;
+        bottom: -50px;
+    }
+    header .container img{
+        width: 100px;
+    }
+    .about .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -3px;
+        top: 150px;
+    }
+    .about .container img{
+        position: relative;
+        left: 75px !important;
+    }
+    .about .container p{
+        top: 213px;
+        left: 10px;
+        text-align: center;
+    }
+    .project .container{
+        flex-direction: column;
+        display: flex;
+        gap: 120px;
+        left: 20px !important;
+        padding: 0;
+    }
+    .project .container .box{
+        position: relative;
+        top: 57px;
+        left: 12%;
+    }
+    #contact .container{
+        left: -25px !important;
+        position: relative;
+    }
+    footer{
+        width: 104% !important;
+    }
+    .section{
+        padding-top: 321px !important;
+    padding-bottom: 321px !important;
+    margin-top: 321px !important;
+    margin-bottom: 321px !important;
+    }
+    .main-about{
+        transform: translateY(-610px) !important;
+        left: 31% !important;
+    }
+    .main-project{
+        left: 22% !important;
+    }
+    .main-contact{
+        left: 26% !important;
+    }
+}
+
+
+@media (max-width: 992px) {
+    header .container {
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    header .container ul {
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center;
+        font-size: 25px;
+        position: relative;
+    }
+    .l{
+        padding: 0 !important;
+        width: 200px;
+    }
+    header .container ul li{
+        display: flex;
+        justify-content: space-around !important;
+        align-items: center;
+        font-size: 20px;
+        position: relative;
+        width: 172px;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .landing img {
+        width: 100%;
+        position: relative;
+        bottom: -50px;
+    }
+    header .container img{
+        width: 100px;
+    }
+    .about .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -3px;
+    }
+    .about .container img{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 291px;
+        top: 160px;
+    }
+    .about .container p{
+        top: 213px;
+        left: 10px;
+        text-align: center;
+    }
+    .project .container{
+        flex-direction: column;
+        display: flex;
+        gap: 120px;
+        left: 140px;
+    }
+    .project .container .box{
+        position: relative;
+        top: 57px;
+        left: 12%;
+    }
+    #contact .container{
+        left: -15px;
+        position: relative;
+    }
+    footer{
+        width: 107%;
+    }
+    .section{
+        padding-top: 321px !important;
+    padding-bottom: 321px !important;
+    margin-top: 321px !important;
+    margin-bottom: 321px !important;
+    }
+    .main-about{
+        transform: translateY(-342px);
+        left: 42%;
+    }
+    .main-project{
+        left: 37%;
+    }
+    .main-contact{
+        left: 43%;
+    }
+}
